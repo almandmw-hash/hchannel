@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神と仏はなぜ一つになったのか――天智天皇の時代と神仏習合の起源</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7OGWLYWBZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7OGWLYWBZT');
+</script>
+<style>
+  :root{
+    --paper:#F6F2E9;
+    --ink:#241F1A;
+    --ink-soft:#4C443C;
+    --purple:#4A3B63;
+    --purple-deep:#2E2440;
+    --gold:#A6813A;
+    --line:#DCD3BF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans JP", sans-serif;
+    font-weight:400;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .masthead{
+    border-bottom:3px double var(--ink);
+    padding:20px 24px 14px;
+    text-align:center;
+  }
+  .masthead .kicker{
+    font-size:11px;
+    letter-spacing:0.35em;
+    color:var(--purple-deep);
+    font-weight:700;
+  }
+  .masthead .date{
+    margin-top:6px;
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:0.1em;
+  }
+  .backlink{
+    display:block;
+    text-align:center;
+    font-size:12px;
+    padding:10px 0;
+    color:var(--purple-deep);
+    text-decoration:none;
+    letter-spacing:0.05em;
+  }
+
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 80px;}
+
+  .eyebrow{
+    margin-top:36px;
+    font-size:12px;
+    letter-spacing:0.25em;
+    color:var(--gold);
+    font-weight:700;
+    border-left:3px solid var(--gold);
+    padding-left:10px;
+  }
+
+  h1{
+    font-family:"Shippori Mincho", serif;
+    font-size:clamp(26px, 6vw, 40px);
+    line-height:1.55;
+    font-weight:700;
+    margin:18px 0 10px;
+    color:var(--ink);
+  }
+  h1 .accent{color:var(--purple-deep);}
+
+  .sub{
+    font-family:"Noto Serif JP", serif;
+    font-size:16px;
+    color:var(--ink-soft);
+    line-height:1.85;
+    margin:0 0 22px;
+    padding-bottom:22px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .byline{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-bottom:36px;
+    letter-spacing:0.03em;
+  }
+
+  .timeline{
+    margin:0 0 44px;
+    padding:20px 18px 18px;
+    background:linear-gradient(180deg, rgba(74,59,99,0.06), rgba(74,59,99,0));
+    border:1px solid var(--line);
+  }
+  .timeline .label{
+    font-size:11px;
+    letter-spacing:0.15em;
+    color:var(--ink-soft);
+    margin-bottom:14px;
+  }
+  .timeline ol{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .timeline li{
+    display:flex;
+    gap:14px;
+    font-size:13px;
+    padding:8px 0;
+    border-bottom:1px dashed var(--line);
+  }
+  .timeline li:last-child{border-bottom:none;}
+  .timeline .yr{
+    font-family:"Shippori Mincho", serif;
+    color:var(--purple-deep);
+    font-weight:700;
+    min-width:64px;
+  }
+
+  article h2{
+    font-family:"Shippori Mincho", serif;
+    font-size:21px;
+    margin:46px 0 16px;
+    color:var(--purple-deep);
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  article h2::before{
+    content:"";
+    width:22px;height:1px;
+    background:var(--gold);
+    display:inline-block;
+  }
+
+  article p{
+    font-size:15.5px;
+    color:var(--ink);
+    margin:0 0 22px;
+  }
+
+  .pullquote{
+    font-family:"Noto Serif JP", serif;
+    font-size:19px;
+    line-height:1.85;
+    color:var(--purple-deep);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:22px 4px;
+    margin:34px 0;
+  }
+
+  .callout{
+    background:#EEE7D6;
+    border:1px solid var(--line);
+    padding:22px 22px 4px;
+    margin:30px 0;
+  }
+  .callout h3{
+    font-size:13px;
+    letter-spacing:0.1em;
+    color:var(--purple-deep);
+    margin:0 0 14px;
+    font-weight:700;
+  }
+  .callout ul{margin:0;padding:0 0 18px 1.1em;}
+  .callout li{
+    font-size:14.5px;
+    margin-bottom:14px;
+    color:var(--ink);
+  }
+  .callout li b{color:var(--gold);}
+
+  footer{
+    text-align:center;
+    padding:26px 24px 40px;
+    font-size:11px;
+    letter-spacing:0.2em;
+    color:var(--ink-soft);
+  }
+
+  @media (max-width:480px){
+    .byline{flex-direction:column;gap:4px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="kicker">日本史・文化 ジャーナル</div>
+  <div class="date">2026年7月2日 掲載</div>
+</div>
+<a class="backlink" href="index.html">← 記事一覧に戻る</a>
+
+<div class="wrap">
+
+  <div class="eyebrow">古代日本の転換点</div>
+  <h1>神と仏は<br>なぜ<span class="accent">一つになったのか</span><br>――天智天皇の時代</h1>
+  <p class="sub">激動の7世紀、国家の存亡をかけた改革者の治世に、日本独自の信仰のかたちが静かに芽生えていた</p>
+
+  <div class="byline">
+    <span>取材・構成 編集部</span>
+    <span>読了目安 6分</span>
+  </div>
+
+  <div class="timeline">
+    <div class="label">天智天皇をめぐる主な出来事</div>
+    <ol>
+      <li><span class="yr">645年</span><span>乙巳の変・大化の改新が始まる</span></li>
+      <li><span class="yr">663年</span><span>白村江の戦いで唐・新羅連合軍に大敗</span></li>
+      <li><span class="yr">667年</span><span>都を近江大津宮へ移す</span></li>
+      <li><span class="yr">668年</span><span>即位し天智天皇となる</span></li>
+      <li><span class="yr">671年</span><span>崩御。壬申の乱の遠因となる</span></li>
+    </ol>
+  </div>
+
+  <article>
+    <h2>クーデターから始まった治世</h2>
+    <p>天智天皇――即位以前は中大兄皇子と呼ばれたこの人物の名は、645年の乙巳の変と切り離せない。当時、朝廷で権勢を振るっていた蘇我入鹿を宮中で討ち、蘇我氏の専横に終止符を打ったこの政変は、その後「大化の改新」と呼ばれる一連の国家改革の出発点となった。</p>
+    <p>公地公民制の導入、戸籍の整備、中央集権的な統治機構の構築――中大兄皇子が推し進めた改革は、それまで有力豪族が分割していた権力を天皇のもとに集約し、日本という国家のかたちそのものを作り替える試みだった。</p>
+
+    <h2>国家存亡の危機・白村江の敗戦</h2>
+    <p>しかし彼の治世は、順調な国内改革だけでは語れない。663年、朝鮮半島の百済を支援するために送った日本の水軍は、白村江の戦いで唐・新羅の連合軍に壊滅的な敗北を喫する。この敗戦は、当時の日本にとって国家の存続そのものが脅かされる衝撃的な出来事だった。</p>
+    <p>敗戦後、中大兄皇子は都を飛鳥から近江大津宮へと移し、九州から瀬戸内海沿岸にかけて防衛拠点を築くなど、国防体制の立て直しに奔走する。668年、ようやく即位して天智天皇となったのは、こうした危機的状況のただ中でのことだった。</p>
+
+    <div class="pullquote">敗戦という国家の危機が、皮肉にも中央集権化と信仰の再編という、二つの大きな変革を加速させた。</div>
+
+    <h2>神仏習合、その萌芽</h2>
+    <p>この時代、仏教はすでに6世紀に公式に伝来していたが、あくまで外来の新しい信仰であり、日本古来の神々への信仰とは別のものと捉えられていた。ところが国家存亡の危機を経験した7世紀後半、鎮護国家――仏教の力によって国家を守るという思想が急速に広まっていく。</p>
+    <p>天智天皇自身も近江大津宮の周辺に寺院を建立し、仏教を国家統治の柱のひとつとして位置づけようとした。この頃から、日本古来の神々と仏教の仏や菩薩とを結びつけて理解する考え方――のちに神仏習合と呼ばれる信仰のかたちが、少しずつ形成されていったと考えられている。</p>
+
+    <h2>後世に残したもの</h2>
+    <p>671年、天智天皇が崩御すると、後継をめぐって壬申の乱と呼ばれる皇位継承の内乱が起こる。天智天皇自身の治世は必ずしも平穏なものではなかったが、彼が築いた中央集権的な統治の枠組みと、神と仏を共存させる信仰のあり方は、その後の日本社会に長く受け継がれていくことになる。</p>
+    <p>やがて奈良時代から平安時代にかけて、神仏習合はさらに理論的に整備され、神社の境内に寺院が併設される「神宮寺」や、神は仏の仮の姿であるとする「本地垂迹説」といった考え方へと発展していく。熊野をはじめとする各地の霊場で見られる神仏が同居する景観も、この流れの延長線上にあるものだ。</p>
+
+    <div class="callout">
+      <h3>天智天皇の時代を読み解く3つの視点</h3>
+      <ul>
+        <li><b>大化の改新は一度の事件ではない。</b>乙巳の変をきっかけに、数十年かけて段階的に進められた一連の国家改革である。</li>
+        <li><b>白村江の敗戦が政治の転換点となった。</b>対外的な危機が、国内の統治体制と信仰のあり方を見直す契機になった。</li>
+        <li><b>神仏習合は徐々に形成された。</b>ある日突然生まれた思想ではなく、7世紀後半から平安時代にかけて長い時間をかけて整えられていった。</li>
+      </ul>
+    </div>
+
+    <p>危機の時代を生きた為政者が、外来の思想を排除するのではなく、既存の信仰と結びつけながら受け入れていった。この柔軟さは、その後の日本文化のあり方を考えるうえでも、示唆に富む視点なのかもしれない。</p>
+  </article>
+
+</div>
+
+<footer>HISTORY & CULTURE JOURNAL</footer>
+
+</body>
+</html>
