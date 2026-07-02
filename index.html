@@ -1,41 +1,265 @@
-# 「もう働かなくていい」はずだった――資産1億8000万円・55歳元部長のFIRE生活3年目、〈妻の失踪〉で一変。元部下に「パートでもいいから雇って」と頭を下げるも、返ってきたのは丁重な"お断り"メール
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「もう働かなくていい」はずだった――FIRE生活3年目の転落</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F4EC;
+    --ink:#1E1B16;
+    --ink-soft:#4A443B;
+    --bronze:#8B6A3D;
+    --bronze-deep:#5C4526;
+    --navy:#1E2A3A;
+    --line:#D8D0BE;
+    --rule-red:#8C3A2B;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans JP", sans-serif;
+    font-weight:400;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .masthead{
+    border-bottom:3px double var(--ink);
+    padding:20px 24px 14px;
+    text-align:center;
+  }
+  .masthead .kicker{
+    font-family:"Noto Sans JP",sans-serif;
+    font-size:11px;
+    letter-spacing:0.35em;
+    color:var(--bronze-deep);
+    font-weight:700;
+  }
+  .masthead .date{
+    margin-top:6px;
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:0.1em;
+  }
 
-## 順風満帆だったセカンドライフ
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 80px;}
 
-大手商社で部長職まで務めた田村浩一さん（仮名・58歳）は、55歳のときに早期退職優遇制度を利用して会社を去った。退職金と長年の投資で築いた資産は約1億8000万円。子どもは独立し、住宅ローンも完済済み。田村さんは「もう働かなくていい」と、悠々自適な"FIRE生活"に踏み出した。
+  .eyebrow{
+    margin-top:42px;
+    font-size:12px;
+    letter-spacing:0.25em;
+    color:var(--rule-red);
+    font-weight:700;
+    border-left:3px solid var(--rule-red);
+    padding-left:10px;
+  }
 
-最初の1年は理想通りだった。朝はゆっくり起き、妻と二人で旅行に出かけ、趣味のゴルフに没頭する日々。周囲からは「うらやましい」と言われることも多く、田村さん自身も「自分の人生設計は正しかった」と満足していたという。
+  h1{
+    font-family:"Shippori Mincho", serif;
+    font-size:clamp(28px, 6vw, 42px);
+    line-height:1.5;
+    font-weight:700;
+    margin:18px 0 10px;
+    color:var(--ink);
+  }
+  h1 .accent{color:var(--bronze-deep);}
 
-## 妻の変化が始まりだった
+  .sub{
+    font-family:"Noto Serif JP", serif;
+    font-size:16px;
+    color:var(--ink-soft);
+    line-height:1.85;
+    margin:0 0 22px;
+    padding-bottom:22px;
+    border-bottom:1px solid var(--line);
+  }
 
-ところが2年目に入った頃から、様子がおかしくなる。長年専業主婦として家庭を支えてきた妻が、突然「自分の時間がほしい」と言い出し、パート勤めを始めた。最初は「いいことだ」と思っていた田村さんだったが、次第に妻の帰りが遅くなり、会話も減っていった。
+  .byline{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-bottom:36px;
+    letter-spacing:0.03em;
+  }
 
-そして3年目のある日、妻は書き置き一枚を残して家を出て行った。「これからは自分のために生きたい」――理由の詳細は語られないまま、夫婦関係は事実上の破綻を迎えた。
+  /* Signature element: declining asset line */
+  .trajectory{
+    margin:0 0 44px;
+    padding:20px 18px 16px;
+    background:linear-gradient(180deg, rgba(140,58,43,0.04), rgba(140,58,43,0));
+    border:1px solid var(--line);
+  }
+  .trajectory .label{
+    font-size:11px;
+    letter-spacing:0.15em;
+    color:var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+  }
+  .trajectory svg{display:block;width:100%;height:auto;}
+  .trajectory .figures{
+    display:flex;
+    justify-content:space-between;
+    font-family:"Shippori Mincho",serif;
+    margin-top:6px;
+  }
+  .trajectory .figures span{font-size:13px;color:var(--ink-soft);}
+  .trajectory .figures .peak{color:var(--bronze-deep);font-weight:700;}
+  .trajectory .figures .now{color:var(--rule-red);font-weight:700;}
 
-## 資産はあっても「居場所」がない
+  article h2{
+    font-family:"Shippori Mincho", serif;
+    font-size:21px;
+    margin:46px 0 16px;
+    color:var(--navy);
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  article h2::before{
+    content:"";
+    width:22px;height:1px;
+    background:var(--bronze);
+    display:inline-block;
+  }
 
-離婚協議が始まると、財産分与の話し合いは想像以上に厳しいものになった。加えて、株式市場の変動も重なり、資産は目減りしていく。田村さんは焦りを感じ始めた。
+  article p{
+    font-size:15.5px;
+    color:var(--ink);
+    margin:0 0 22px;
+  }
 
-「働かなくていい」はずが、気づけば「働かなければならない」状況に追い込まれていた田村さん。しかし55歳を過ぎてからの再就職市場は、想像以上に厳しかった。書類選考すら通らない日々が続いた。
+  .pullquote{
+    font-family:"Noto Serif JP", serif;
+    font-size:19px;
+    line-height:1.85;
+    color:var(--bronze-deep);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:22px 4px;
+    margin:34px 0;
+  }
 
-## 元部下への相談、そして届いた"お断り"
+  .callout{
+    background:#EFE9D8;
+    border:1px solid var(--line);
+    padding:22px 22px 4px;
+    margin:30px 0;
+  }
+  .callout h3{
+    font-size:13px;
+    letter-spacing:0.1em;
+    color:var(--bronze-deep);
+    margin:0 0 14px;
+    font-weight:700;
+  }
+  .callout ul{margin:0;padding:0 0 18px 1.1em;}
+  .callout li{
+    font-size:14.5px;
+    margin-bottom:14px;
+    color:var(--ink);
+  }
+  .callout li b{color:var(--navy);}
 
-追い詰められた田村さんは、かつて自分が育てた元部下・中村さん（仮名・42歳）に連絡を取った。中村さんは独立して小さな会社を経営しており、田村さんは「アルバイトでもいいから雇ってもらえないか」と頭を下げた。
+  .disclaimer{
+    margin-top:56px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    font-size:12px;
+    color:var(--ink-soft);
+    font-style:italic;
+  }
 
-数日後、中村さんから返ってきたのは、丁寧だが明確な"お断り"のメールだった。「田村さんのご経験は素晴らしいものですが、弊社の規模では役職に見合った業務をご用意できません」――言葉を選びながらも、事実上の拒絶だった。
+  footer{
+    text-align:center;
+    padding:26px 24px 40px;
+    font-size:11px;
+    letter-spacing:0.2em;
+    color:var(--ink-soft);
+  }
 
-かつて部下だった人間からの丁重な断りは、田村さんの自尊心を大きく傷つけた。「順風満帆だったはずの人生設計が、これほどもろく崩れるとは思わなかった」と田村さんは振り返る。
+  @media (max-width:480px){
+    .byline{flex-direction:column;gap:4px;}
+  }
+</style>
+</head>
+<body>
 
-## FIRE生活に潜むリスク
+<div class="masthead">
+  <div class="kicker">マネー・ライフ ジャーナル</div>
+  <div class="date">2026年7月2日 掲載</div>
+</div>
 
-ファイナンシャルプランナーは、こうしたケースについて次のように指摘する。
+<div class="wrap">
 
-- **資産だけでは人生設計は完成しない**：夫婦間のコミュニケーション不足や、退職後の人間関係の変化への備えも重要
-- **再就職市場の現実**：管理職経験者ほど、年齢を重ねてからの再就職は難航しやすい
-- **資産の取り崩し計画の甘さ**：市場変動や離婚などの想定外の支出リスクを織り込んでいないケースが多い
+  <div class="eyebrow">FIRE生活の落とし穴</div>
+  <h1>「もう働かなくていい」<br>はずだった――<span class="accent">資産1億8000万円・58歳</span><br>元部長のFIRE生活3年目</h1>
+  <p class="sub">〈妻の失踪〉で一変。元部下に「パートでもいいから雇って」と頭を下げるも、返ってきたのは丁重な"お断り"メール</p>
 
-早期退職やFIREは、経済的な数字上のシミュレーションだけでは測れない落とし穴がある。田村さんのケースは、「お金の余裕」と「人生の安定」は必ずしもイコールではないことを物語っている。
+  <div class="byline">
+    <span>取材・構成 編集部</span>
+    <span>読了目安 5分</span>
+  </div>
 
----
+  <div class="trajectory">
+    <div class="label"><span>資産推移（イメージ）</span><span>退職時 → 現在</span></div>
+    <svg viewBox="0 0 640 120" preserveAspectRatio="none">
+      <line x1="0" y1="20" x2="640" y2="20" stroke="#D8D0BE" stroke-width="1"/>
+      <line x1="0" y1="60" x2="640" y2="60" stroke="#D8D0BE" stroke-width="1"/>
+      <line x1="0" y1="100" x2="640" y2="100" stroke="#D8D0BE" stroke-width="1"/>
+      <path d="M0,25 C120,18 200,15 260,30 C340,50 380,55 460,78 C540,98 590,105 640,100"
+            fill="none" stroke="#8C3A2B" stroke-width="2.5"/>
+      <circle cx="0" cy="25" r="4" fill="#8B6A3D"/>
+      <circle cx="640" cy="100" r="4" fill="#8C3A2B"/>
+    </svg>
+    <div class="figures">
+      <span class="peak">約1億8000万円</span>
+      <span class="now">目減り進行中</span>
+    </div>
+  </div>
 
-*本記事はFIRE生活における一般的なリスク事例をもとに構成したフィクションであり、特定の個人を描いたものではありません。*
+  <article>
+    <h2>順風満帆だったセカンドライフ</h2>
+    <p>大手商社で部長職まで務めた田村浩一さん（仮名・58歳）は、55歳のときに早期退職優遇制度を利用して会社を去った。退職金と長年の投資で築いた資産は約1億8000万円。子どもは独立し、住宅ローンも完済済み。田村さんは「もう働かなくていい」と、悠々自適な"FIRE生活"に踏み出した。</p>
+    <p>最初の1年は理想通りだった。朝はゆっくり起き、妻と二人で旅行に出かけ、趣味のゴルフに没頭する日々。周囲からは「うらやましい」と言われることも多く、田村さん自身も「自分の人生設計は正しかった」と満足していたという。</p>
+
+    <h2>妻の変化が始まりだった</h2>
+    <p>ところが2年目に入った頃から、様子がおかしくなる。長年専業主婦として家庭を支えてきた妻が、突然「自分の時間がほしい」と言い出し、パート勤めを始めた。最初は「いいことだ」と思っていた田村さんだったが、次第に妻の帰りが遅くなり、会話も減っていった。</p>
+    <p>そして3年目のある日、妻は書き置き一枚を残して家を出て行った。「これからは自分のために生きたい」――理由の詳細は語られないまま、夫婦関係は事実上の破綻を迎えた。</p>
+
+    <div class="pullquote">「働かなくていい」はずが、気づけば「働かなければならない」状況に追い込まれていた。</div>
+
+    <h2>資産はあっても「居場所」がない</h2>
+    <p>離婚協議が始まると、財産分与の話し合いは想像以上に厳しいものになった。加えて、株式市場の変動も重なり、資産は目減りしていく。田村さんは焦りを感じ始めた。</p>
+    <p>しかし55歳を過ぎてからの再就職市場は、想像以上に厳しかった。書類選考すら通らない日々が続いた。</p>
+
+    <h2>元部下への相談、そして届いた"お断り"</h2>
+    <p>追い詰められた田村さんは、かつて自分が育てた元部下・中村さん（仮名・42歳）に連絡を取った。中村さんは独立して小さな会社を経営しており、田村さんは「アルバイトでもいいから雇ってもらえないか」と頭を下げた。</p>
+    <p>数日後、中村さんから返ってきたのは、丁寧だが明確な"お断り"のメールだった。「田村さんのご経験は素晴らしいものですが、弊社の規模では役職に見合った業務をご用意できません」――言葉を選びながらも、事実上の拒絶だった。</p>
+    <p>かつて部下だった人間からの丁重な断りは、田村さんの自尊心を大きく傷つけた。「順風満帆だったはずの人生設計が、これほどもろく崩れるとは思わなかった」と田村さんは振り返る。</p>
+
+    <div class="callout">
+      <h3>専門家が指摘する FIRE生活に潜むリスク</h3>
+      <ul>
+        <li><b>資産だけでは人生設計は完成しない。</b>夫婦間のコミュニケーション不足や、退職後の人間関係の変化への備えも重要。</li>
+        <li><b>再就職市場の現実。</b>管理職経験者ほど、年齢を重ねてからの再就職は難航しやすい。</li>
+        <li><b>資産の取り崩し計画の甘さ。</b>市場変動や離婚などの想定外の支出リスクを織り込んでいないケースが多い。</li>
+      </ul>
+    </div>
+
+    <p>早期退職やFIREは、経済的な数字上のシミュレーションだけでは測れない落とし穴がある。田村さんのケースは、「お金の余裕」と「人生の安定」は必ずしもイコールではないことを物語っている。</p>
+
+  </article>
+
+</div>
+
+<footer>MONEY & LIFE JOURNAL</footer>
+
+</body>
+</html>
